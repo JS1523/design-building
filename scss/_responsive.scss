@@ -78,6 +78,9 @@
 }  
 
 @media screen and (max-width: 768px) {
+    body.lock {
+        overflow: hidden;
+    }
     .logo { 
         z-index: 2;
         color: $blue;
@@ -214,6 +217,16 @@
             }
         }
     }
+
+    .ourstory__content-imeg {
+        min-width: 200px;
+        height: 200px;
+        margin-right: 20px;
+    }
+
+    .career .content__item-body {
+        flex: 1 1 47%;
+    }
 }
 
 @media screen and (max-height: 600px) {
@@ -258,7 +271,10 @@
     .news__top,
     .our__services-page,
     .servises__top,
-    .servises__bottom  {
+    .servises__bottom,
+    .slider__top-wrap,
+    .ourstory__content-wrap,
+    .ourstory__gallery  {
         margin-bottom: 30px;
     }
 
@@ -340,6 +356,26 @@
         &-text {
             flex: 0 1 100%;
         }
+    }
+
+    .slider__top .slick-list {
+        margin-bottom: 10px;
+    }
+
+    .slider__top-item {
+        padding: 10px 52px 20px 20px;
+    }
+
+    .ourstory__content-wrap {
+        padding: 20px 0;
+    }
+
+    .ourstory__content-imeg {
+        display: none;
+    }
+
+    .career .content__item-body {
+        margin: 0 10px 20px;
     }
 
     .footer__column {

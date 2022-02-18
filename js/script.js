@@ -1,9 +1,34 @@
-const burgerButton = document.querySelector(".burger");
-const burgerMenu = document.querySelector(".menu__list");
+$(document).ready(function() {
+    $('.burger').click(function(event) {
+        $('.burger,.menu__list').toggleClass('active');
+        $('body').toggleClass('lock')
+    })
+})
 
-burgerButton.addEventListener("click", () => {
-    burgerButton.classList.toggle("burger__active");
-    burgerMenu.classList.toggle("active");
+$(function(){
+	$('.slider__top').slick({
+		dots: true,
+		sliderToShow: 4,
+		variableWidth: true,
+		arrows: false,
+		responsive: [
+			{
+			  breakpoint: 1300,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				variableWidth: false
+			  }
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					sliderToShow: 1,
+					variableWidth: false
+				}
+			}
+		]
+	});
 });
 
 $(function(){
@@ -11,7 +36,24 @@ $(function(){
 		dots: true,
 		sliderToShow: 3,
 		variableWidth: true,
-		arrows: false
+		arrows: false,
+		responsive: [
+			{
+			  breakpoint: 1300,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				variableWidth: false
+			  }
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					sliderToShow: 1,
+					variableWidth: false
+				}
+			}
+		]
 	});
 });
 

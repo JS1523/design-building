@@ -120,7 +120,6 @@
     }
     
     &.burger__active { 
-
         .burger__line {
             display: none;
         }
@@ -138,7 +137,7 @@
 .menu {
     &__list {
         display: flex;
-        height: 80px;
+        min-height: 80px;
 
         &-item {
             padding-right: 40px;
@@ -887,21 +886,53 @@
 .slider {
 
     &__top-wrap {
+        margin-bottom: 100px;
     }
 
     &__top {
-        display: flex;
         margin-bottom: 100px;
+        overflow: hidden;
+        margin: 0 15px;
 
         &-item {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             padding: 19px 52px 42px 22px;
+
             &:hover {
                 background: url(../imeg/hover.jpg) 0 0/ cover no-repeat;
                 color: $white;
             }
+        }
+
+        .slick-list {
+            margin-bottom: 30px;
+        }
+
+        .slick-track {
+            display: flex;
+        }
+
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+
+            li {
+                margin: 0 10px;
+            }
+        }
+
+        .slick-dots button {
+            font-size: 0px;
+            width: 12px;
+            height: 12px;
+            background-color: #E7E7E7;
+            border-radius: 50%;
+        }
+
+        .slick-active button {
+            background-color: $blue;
         }
 
         &-img {
@@ -916,7 +947,7 @@
 
     &__text {
         margin-bottom: 16px;
-        width: 342px;
+        max-width: 342px;
     }
 
     &__text-b {
@@ -924,9 +955,15 @@
     }
 
     &__bottom {
+        overflow: hidden;
 
         .slick-dots {
             display: flex;
+            justify-content: center;
+
+            li {
+                margin: 0 10px;
+            }
         }
 
         .slick-dots button {
@@ -995,21 +1032,55 @@
     margin-bottom: 100px;
 }
 
-.slider {
-    &__bottom {
-        position: relative;
-    }
-
-    &__bottom-item {
-    }
+.header__career {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.slick-list {
-    overflow: hidden;
-}
-
-.slick-tack {
+.career {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .content__item-body {
+        flex: 0 0 30%;
+        margin: 0 10px 100px;
+    }
+
+    &-btn {
+        @extend %btn-b;
+    }
+
+    &-wick,
+    &-time {
+        margin-bottom: 6px;
+    }
+
+    &-maney {
+        margin-bottom: 32px;
+    }
+
+    &-wick::before {
+        content: url(../imeg/svg/bx_bxs-time-five.svg);
+        padding-right: 10px;
+        position: relative;
+        top: 2px;
+    }
+
+    &-time::before {
+        content: url(../imeg/svg/ph_bag-simple-fill.svg);
+        padding-right: 10px;
+        position: relative;
+        top: 2px;
+    }
+
+    &-maney::before {
+        content: url(../imeg/svg/fa-solid_money-bill-wave-alt.svg);
+        padding-right: 10px;
+        position: relative;
+        top: 2px;
+    }
 }
 
 .footer {
