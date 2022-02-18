@@ -1,0 +1,424 @@
+@media screen and (max-width: 1200px) {
+    .our__company {
+        &-items {
+            flex-wrap: wrap;
+            flex: 0 0 20%;
+        }
+
+        &-body {
+            margin-left: 50px;
+        }
+
+        &-column:first-child {
+            display: none;
+        }
+
+        &-chek {
+            display: none;
+        }
+    }
+
+    .about__top-imeg {
+        flex: 0 0 40%;
+        max-width: 500px;
+        img {
+            width: 100%;
+        }
+    }
+
+    .about__top-img {
+        bottom: 50px;
+    }
+
+    .contact__form-img {
+        display: none;
+    }
+
+    .contact__form-input {
+       flex: 0 0 100%;
+    }
+
+    .contact__form-area {
+        max-width: 1200px;
+    }
+
+}  
+
+@media screen and (max-width: 992px) {
+    .menu__list-item {
+        padding-right: 20px;
+    }
+
+    .about__body-description {
+        padding-top: 0;
+        flex: 0 0 60%;
+    }
+
+    .about__body-title {
+        text-align: center;
+    }
+
+    .gallery,
+    .news__body {
+        justify-content: center;
+        &__item {
+            flex: 0 1 40%;
+        }
+    }
+    
+    .news-wrapper {
+        background: url(../imeg/gallery/newsBg.jpg) 0 100px/100% 400px no-repeat;
+    }
+
+    .news__top {
+        align-items: flex-start;
+        height: 300px;
+    }
+    
+}  
+
+@media screen and (max-width: 768px) {
+    .logo { 
+        z-index: 2;
+        color: $blue;
+        line-height: 30px;
+    }
+
+    .burger {
+        display: block;  
+    }
+
+    .menu {
+        padding-right: 0;
+        margin-top: 15px;
+        position: absolute;
+        top: 0;
+        left: -110%;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: $white;
+        transition: all 0.5s;
+
+        &__list.active {
+            top: -30px;
+            left: -10px;
+        }
+
+        &__list-item {
+            padding-right: 0;
+            margin-top: 15px;
+        }
+
+        &__link {
+            color: $blue;
+        }
+    }
+
+    .our {
+        &__company-stats {
+            flex-wrap: wrap;
+        }
+    
+        &__services-items {
+            flex-wrap: wrap;
+        }
+    
+        &__services-item {
+            flex: 0 0 50%;
+        }
+    
+        &__benefits-item {
+            margin-right: 0px;
+        }
+    
+        &__works-img3 {
+            margin: 0;
+        }    
+    
+        &__works-img4,
+        &__works-img5 {
+            display: none;
+        }
+    
+        &__footer-what:first-child {
+            padding: 30px 20px;
+        }
+    
+        &__footer-right-container {
+            width: 360px;
+            padding: 40px 20px 20px 40px;
+            top: 30%;
+            &::before {
+                top: -50px;
+                left: -40px
+            }
+        }
+    }
+
+    .news-wrapper {
+        background: url(../imeg/gallery/newsBg.jpg) 0 100px/100% 300px no-repeat;
+    }
+
+    .about__top-description {
+        margin: 0 10px;
+    }
+
+    .about__top-text:last-child {
+        margin: 0;
+    }
+
+    .about__top-imeg {
+        flex: 0 0 30%;
+    }
+
+    .about__top-img {
+        bottom: 50px;
+    }
+
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+
+    .servises {
+
+        &__top {
+            min-height: 300px;
+
+            &-item {
+                clip-path: none;
+                padding: 40px;
+                position: relative;
+            }
+
+            &-img {
+                display: none;
+            }
+        }
+   
+
+        &__bottom {
+            max-height: 560px;
+
+            &-item {
+                clip-path: none;
+                top: 0;
+                padding: 40px;
+                position: relative;
+                height: 100%;
+            }
+
+            &-img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .header__right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        &-inner {
+            text-align: center;
+        }
+        
+        &__body {
+            justify-content: center;
+        }
+        
+        &__right-img {
+            display: none;
+        }
+
+        &-btn {
+            width: 100%;
+        }
+    }
+
+    .header,
+    .our__company,
+    .our__works,
+    .our__company,
+    .our__content,
+    .partner,
+    .partner__popup,
+    .feedbeck,
+    .feedbeck-content,
+    .about__top,
+    .about__body-wrapper,
+    .contact-wrapper,
+    .contact,
+    .content__item,
+    .news__top,
+    .our__services-page,
+    .servises__top,
+    .servises__bottom  {
+        margin-bottom: 30px;
+    }
+
+    .our {
+        &__services-item {
+            flex: 0 0 100%;
+        }
+    
+        &__benefits {
+            top: 0;
+        }
+    
+        &__company {
+            flex-wrap: wrap;
+            
+            &-body {
+                margin-left: 20px;
+            }
+        }
+    
+        &__content {
+            padding-bottom: 20px;
+        }
+
+        &__works {
+            padding-top: 20px;
+            
+            &-img3 {
+                display: none;
+            }
+        
+            &-item1 {
+                margin-right: 0;
+            }
+        }
+    
+        &__footer {
+            justify-content: center;
+
+            &-right {
+                display: none;
+            }
+        }
+    }
+
+    .partner-clue {
+        bottom: 0;
+    }
+
+    .about__top-imeg,
+    .about__body-imeg  {
+        display: none;
+    }
+
+    .about__body-description {
+        flex: 0 0 100%
+    }
+
+    .contact-social-btns {
+        flex-wrap: wrap;
+    }
+
+    .contact-social-btn + .contact-social-btn {
+        flex: 0 0 100%;
+        margin: 0 0 20px 0;
+    }
+    
+    .contact-social-btn  {
+        flex:  0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .news__top {
+        padding: 20px;
+        flex-wrap: wrap;
+        background: url(../imeg/gallery/Rectangle-37.jpg) center/cover no-repeat;
+
+        &-title,
+        &-text {
+            flex: 0 1 100%;
+        }
+    }
+
+    .footer__column {
+        margin: 0 auto;
+
+        &:last-child {
+            display: none;
+        }
+    }
+
+    .footer__inner {
+        padding: 40px 10px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .header {
+        height: auto;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .our {
+        .our__company-items {
+            display: none;
+        }
+    
+        &__benefits-item {
+            max-width: 500px;
+        }
+    
+        &__benefits-img {
+            max-width: 300px;
+            img {
+                width: 100%;
+            }
+        }
+
+        &__works-item1 {
+            display: none;
+        }
+    
+        &__works-item2 {
+            margin-right: 0;
+        }
+
+        &__benefits-chek {
+            max-width: 280px;
+            top: 20px;
+        }
+    
+        &__benefits .subtitle-small {
+            top: 80px;
+            min-width: 280px;
+        }
+    
+        &__benefits-text {
+            min-width: 290px;
+            top: 120px;
+        }
+    }
+
+    .partner--subtitle {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact__form {
+        padding: 20px 10px ;
+    }
+
+    .contact__form-input {
+        margin: 0 0 16px 0;
+    }
+
+    .content__item {
+        flex: 0 0 100%;
+    }
+}

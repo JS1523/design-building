@@ -1,0 +1,9 @@
+.header {
+    height: 450px;
+}
+
+.header__title,
+.servises__title {
+    text-align: center;
+    margin: 0 auto;
+}

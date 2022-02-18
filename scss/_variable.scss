@@ -1,0 +1,24 @@
+$blue:#056088;
+$white:#ffffff; 
+$gray:rgb(76, 77, 76); 
+
+%btn-b {
+    background: linear-gradient(104deg, #056088 11%, #09A7CA 97%);
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+    width: 158px;
+    height: 72px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.5s;
+    padding: 22px 10px;
+    &:hover {
+        opacity: 0.7;
+    }
+    
+    a {
+        padding: 22px;
+        color: $white;
+    }
+}
